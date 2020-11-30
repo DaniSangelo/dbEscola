@@ -14,7 +14,6 @@ object DataModule1: TDataModule1
     Top = 200
   end
   object fdqAlunos: TFDQuery
-    Active = True
     BeforeInsert = fdqAlunosBeforeInsert
     OnNewRecord = fdqAlunosNewRecord
     Connection = fdcEscola
@@ -107,12 +106,11 @@ object DataModule1: TDataModule1
     end
   end
   object fdqUsuarios: TFDQuery
-    Active = True
     Connection = fdcEscola
     SQL.Strings = (
       'SELECT NMUSUARIO'
       '  FROM USUARIOS'
-      ' WHERE NMUSUARIO = :P_NMUSUARIO'
+      ' WHERE LOGIN = :P_NMUSUARIO'
       '    AND SENHA = :P_SENHA')
     Left = 296
     Top = 136

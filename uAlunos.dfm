@@ -6,8 +6,17 @@ inherited frmAlunos: TfrmAlunos
   PixelsPerInch = 96
   TextHeight = 13
   inherited ToolBar1: TToolBar
-    inherited spbPesquisar: TSpeedButton
-      OnClick = spbPesquisarClick
+    inherited spbRefresh: TSpeedButton
+      OnClick = spbRefreshClick
+    end
+    inherited Panel1: TPanel
+      inherited edtPesquisar: TEdit
+        OnChange = edtPesquisarChange
+        ExplicitLeft = 0
+        ExplicitTop = 0
+        ExplicitWidth = 364
+        ExplicitHeight = 21
+      end
     end
   end
   inherited dbgPadrao: TDBGrid
@@ -15,9 +24,6 @@ inherited frmAlunos: TfrmAlunos
   end
   inherited dbnPadrao: TDBNavigator
     Hints.Strings = ()
-    ExplicitLeft = 0
-    ExplicitTop = 298
-    ExplicitWidth = 686
   end
   inherited dtsPadrao: TDataSource
     DataSet = DataModule1.fdqAlunos

@@ -5,7 +5,8 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, uPadrao, Data.DB, Vcl.Grids,
-  Vcl.DBGrids, Vcl.Buttons, Vcl.ToolWin, Vcl.ComCtrls;
+  Vcl.DBGrids, Vcl.Buttons, Vcl.ToolWin, Vcl.ComCtrls, Vcl.ExtCtrls,
+  Vcl.DBCtrls, Vcl.StdCtrls;
 
 type
   TfrmInstrutores = class(TfrmPadraoSimples)

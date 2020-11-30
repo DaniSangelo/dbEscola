@@ -1,10 +1,12 @@
 object frmLogin: TfrmLogin
   Left = 0
   Top = 0
-  BorderIcons = [biMinimize, biMaximize]
+  ActiveControl = edtUsuario
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsDialog
   Caption = 'Login'
-  ClientHeight = 233
-  ClientWidth = 489
+  ClientHeight = 243
+  ClientWidth = 499
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -13,6 +15,7 @@ object frmLogin: TfrmLogin
   Font.Style = []
   OldCreateOrder = False
   Position = poScreenCenter
+  OnClose = FormClose
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel
@@ -43,14 +46,14 @@ object frmLogin: TfrmLogin
   end
   object edtUsuario: TEdit
     Left = 132
-    Top = 80
+    Top = 83
     Width = 257
     Height = 21
     TabOrder = 0
   end
   object edtSenha: TEdit
     Left = 132
-    Top = 120
+    Top = 122
     Width = 257
     Height = 21
     PasswordChar = '*'
